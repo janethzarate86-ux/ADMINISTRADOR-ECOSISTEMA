@@ -2,17 +2,39 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#071a32">
 <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Admin Macroxel">
+<meta name="application-name" content="MACROXEL Administrador del Ecosistema">
+<link rel="manifest" href="manifest.webmanifest?v=20260821-1">
+<link rel="icon" type="image/png" href="/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/logo.png?v=20260821-1">
+<link rel="shortcut icon" type="image/png" href="/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/logo.png?v=20260821-1">
+<link rel="apple-touch-icon" href="/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/logo.png?v=20260821-1">
 <title>MACROXEL · Administrador del Ecosistema</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#041225;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+#mxFrame{display:block;width:100%;height:100%;border:0;background:#041225}
+#mxLoad{position:fixed;inset:0;z-index:5;display:grid;place-items:center;background:#041225;color:#fff;font-size:13px;font-weight:800;letter-spacing:.04em;transition:opacity .2s ease}
+#mxLoad.hide{opacity:0;pointer-events:none}
+</style>
+</head>
+<body>
+<div id="mxLoad">Abriendo Administrador del Ecosistema…</div>
+<iframe id="mxFrame" title="MACROXEL Administrador del Ecosistema" allow="autoplay; clipboard-read; clipboard-write" referrerpolicy="same-origin"></iframe>
 <script>
-(function(){
-  var target='https://janethzarate86-ux.github.io/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/';
-  var suffix=(location.search||'')+(location.hash||'');
-  location.replace(target+suffix);
+(()=>{'use strict';
+  const CENTRAL=location.origin+'/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/';
+  const suffix=(location.search||'')+(location.hash||'');
+  const frame=document.getElementById('mxFrame');
+  const load=document.getElementById('mxLoad');
+  frame.addEventListener('load',()=>{load.classList.add('hide');setTimeout(()=>load.remove(),240)},{once:true});
+  frame.src=CENTRAL+suffix;
+  setTimeout(()=>load?.classList.add('hide'),12000);
 })();
 </script>
-<style>html,body{margin:0;height:100%;background:#061a31;color:#fff;font-family:system-ui;display:grid;place-items:center}div{text-align:center;font-size:14px}</style>
-</head>
-<body><div>Abriendo Administrador del Ecosistema…</div></body>
+</body>
 </html>
