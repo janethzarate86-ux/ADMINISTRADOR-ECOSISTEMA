@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "MACROXEL Administrador del Ecosistema",
+  "short_name": "Admin Macroxel",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#071a32",
+  "theme_color": "#071a32",
+  "icons": [
+    {
+      "src": "/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/ECOSISTEMA-MACROXEL-HOSPITAL/MACROXEL-VISORES-CENTRAL/ADMINISTRADOR-ECOSISTEMA/logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
